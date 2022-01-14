@@ -53,14 +53,9 @@ const ATB = (props)=>{
                                     },
                                     paperback:{
                                         amazon:'https://www.amazon.ca/Best-Thing-Kirk-Jordan/dp/1648954863/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1628695054&sr=1-1',
-                                        barnes:'https://www.barnesandnoble.com/w/the-god-particle-dr-rhy-ronald-p-rozzi-ms-d/1137333891?ean=9781648951053',
-                                        booksamillion:'https://www.booksamillion.com/p/God-Particle/Rhy-Ronald-P-Rozzi-MS/9781648951053?id=8158356429268',
+                                        barnes:'https://www.barnesandnoble.com/w/the-best-thing-kirk-jordan/1139976648?ean=9781648954863',
+                                        booksamillion:'https://www.booksamillion.com/search?filter=&id=8158356429268&query=9781648954863',
                                     },
-                                    hardcover:{
-                                        amazon:'https://www.amazon.com/God-Particle-Personal-Journey-Know/dp/1648951074/ref=sr_1_1?dchild=1&keywords=9781648951077&qid=1594756701&sr=8-1',
-                                        barnes:'https://www.barnesandnoble.com/w/the-god-particle-dr-rhy-ronald-p-rozzi-ms-d/1137333891?ean=9781648951077',
-                                        booksamillion:'https://www.booksamillion.com/p/God-Particle/Rhy-Ronald-P-Rozzi-MS/9781648951077?id=8158356429268',
-                                    }
                                 }}
                             />
                             <div className="commentSection" >
