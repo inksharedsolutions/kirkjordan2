@@ -4,7 +4,6 @@ import Nav from '../components/nav'
 import Banner from '../components/non-front-banner'
 import AuthorImg from '../../static/author/author.jpg'
 import { Helmet } from "react-helmet"
-import Slider from 'react-slick'
 const ATB = (props) => {
 
     const settings = {
@@ -13,7 +12,7 @@ const ATB = (props) => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1
-      };
+    };
 
     return (
         <>
@@ -47,27 +46,27 @@ const ATB = (props) => {
                         <article
                             className="article-section" id="author">
                             {/* <Slider {...settings}> */}
-                                <div>
+                            <div className="article-flex">
+                                <div className="article-flex-item">
                                     <p>
                                         Kirk Frank Jordan was born in Greenville Pennsylvania April 11, 1965.  He graduated from Greenville High School in 1983, Fort Lewis College in Colorado in 1988.  From there he traveled to Australia for 2 years to help a couple friends develop some business ideas.  His return to America landed him in Boston Massachusetts installing equipment in a manufacturing facility for a season.  He then joined forces with B.F. Goodrich traveling the country from Florida, Wisconsin, to the Baja California for the Baja 1000.
                                     </p>
-                                </div>
-                                <div>
+
                                     <p>
                                         At the end of that contract he rested at his fathers’ home in Hadley Pennsylvania for the holidays and then set sail in the spring for Pat Wolfe Log Building School in Ontario Canada.  Back to Hadley to regroup and head south to Mississippi to spend the winter as a “reforestation technician”, a fancy term for a “pine setter”.  Back to Hadley for some r and r and then west to Missoula Montana where he would be employed by Custom Log Homes for a spell.
                                     </p>
                                 </div>
-                                <div>
+                                <div className="article-flex-item">
                                     <p>
                                         Pat Wolfe’s log school carried some weight and Kirk soon found himself in Maupin Oregon working for Oregon Log Homes.  Oregon Log Homes landed a big contract with Disneyland in Florida to do the log work for “Fort Wilderness Lodge”.  Once that contract was complete, he returned to Pennsylvania to re-tool and head to Alaska where he was petitioned to build a cabin north of the Arctic Circle in the wilderness on the edge of Lake Chandlar.  Working on the Kenai Peninsula and Juneau, he would return to Hadley to catch his breath before heading to Utah where his chainsaw was requested once again.
                                     </p>
-                                </div>
-                                <div>
+
                                     <p>
                                         In 1996 he married a kindergarten teacher while simultaneously buying a home and property and then heading to Delaware to build another log home.  One more log home in Illinois was enough experience to settle him down in Hadley.
                                         From there he would start “Jordan Log Homes” and build log homes and cabins until God would assign him to be fishers of men.   As a good gesture, not recognizing his need for a Savior, Kirk would attend the church he was raised in as a youngster, First Presbyterian Church Greenville Pa.
                                     </p>
                                 </div>
+                            </div>
                             {/* </Slider> */}
                             <p>
                                 <span className="author-name">

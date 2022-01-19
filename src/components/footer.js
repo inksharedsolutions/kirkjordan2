@@ -19,7 +19,7 @@ const Footer = ()=>{
                     <nav>
                         <ul>
                             <li>
-                                <a href="https://www.facebook.com/Dr-Ronald-P-Rozzi-MsD-RHy-117497193389044/"
+                                <a href="https://www.facebook.com/StrattonPressInc"
                                    target="_blank" rel="noreferrer">
                                     <FontAwesomeIcon
                                         className='font-awesome'
@@ -49,7 +49,7 @@ const Footer = ()=>{
                             <li>
                                 <a 
                                     target="_blank"
-                                    href="https://www.goodreads.com/book/show/54630156-the-god-particle" rel="noreferrer">
+                                    href="https://www.goodreads.com/user/show/89077099-stratton-press" rel="noreferrer">
                                     <FontAwesomeIcon 
                                         className='font-awesome'
                                         icon={faGoodreads} />
