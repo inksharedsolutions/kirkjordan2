@@ -54,6 +54,10 @@
     background: linear-gradient(#2c3834, #314c3b);
     height: 100vh;
 
+    @media (max-width:1366px) {
+        height: 85vh;
+      }
+
     h1{
         font-size: 2.8rem;
         font-weight: 900;
@@ -128,7 +132,7 @@
         position: relative;
         z-index: 10;
         width: 100%;
-        transform: translateX(5px);
+        transform: scale(1.5);
         margin-top: 20%;
     }
 

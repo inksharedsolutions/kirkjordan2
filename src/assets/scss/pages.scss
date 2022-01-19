@@ -91,17 +91,32 @@ $prm-font-size : 12px;
 }       
 
 .article-section{
+    // display:flex;
+    // flex-direction: row;
+
+    .article-flex{
+        display:flex;
+        flex-direction: row;
+    }
+    .article-flex-item + .article-flex-item {
+        border-left: solid 1px black;
+    }
+
     p{
         // font-size: 15px;
-        line-height: 2.2;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 25px;
         text-align: justify;
-        color: #696969;
+        word-spacing: -3px;
         margin-bottom: 2em;
+        /* color: #696969; */
     }
     a{
         color: #6b61f8 !important;
         text-decoration: underline;
     }
+
 }
 
 .author-name{
