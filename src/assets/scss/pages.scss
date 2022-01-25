@@ -26,6 +26,10 @@ $prm-font-size : 12px;
         text-transform: uppercase;
         line-height: 0;
         color: #c5c5c5;
+
+        @media (max-width:768px) {
+            margin-top: 150px;
+          } 
     }
 
     h1{
@@ -126,6 +130,10 @@ $prm-font-size : 12px;
     display: block;
     text-align: right;
     font-weight: bold;
+
+    @media (max-width:375px) {
+        font-size: 8vw;
+      }
     
     .author-span-ft{
         display: block;

@@ -27,7 +27,7 @@
         padding: 20px;
         margin-top: 3em;
         background-color: #3a3f39;
-
+        
         a{
             color: white !important;
         }
@@ -63,6 +63,7 @@
         font-weight: 900;
         line-height: 1;
         text-transform: uppercase;
+        
 
         // &:after{
             // content: '';
@@ -77,6 +78,9 @@
             // animation-duration:2s;
             // transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
         // }
+        @media (max-width:1366px) {
+            text-align: center;
+          }
     }
 }
 
