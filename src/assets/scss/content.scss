@@ -202,7 +202,7 @@
         }
     }
     input[name="submit"]{
-        background: #6fc061;
+        background: #521d18;
         border: none;
         color: #ffffff;
         cursor: pointer;
@@ -213,7 +213,7 @@
     button{
         margin: 0;
         font-size:17px !important;
-        background: #6fc061;
+        background: #521d18;
     }
 }
 
@@ -474,6 +474,9 @@
 .param-footer{
     max-width: 500px;
     margin: 4% auto !important;
+    @media (max-width:375px) {
+        padding:10px;
+      }
 }
 
 

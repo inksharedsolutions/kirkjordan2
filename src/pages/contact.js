@@ -72,7 +72,7 @@ const Contact = (props)=>{
 
                             <form 
                                 onSubmit={OnSubmitForm}
-                                action="https://formcarry.com/s/1JC_ShOknKUu"
+                                action="https://formspree.io/f/mbjqoneo"
                                 method="POST">
 
                             <div className="columns" id="form-wrapper">
