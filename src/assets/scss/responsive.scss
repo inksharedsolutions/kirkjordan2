@@ -26,6 +26,12 @@
     }
 }
 
+@media screen and (max-width : 1366px)
+{
+    .btn-container{ 
+        margin: 0 auto;
+    }
+}
 
 @media screen and (min-width : 1250px) {
     .img-wrapper-form {
@@ -195,7 +201,7 @@
         }
 
         p {
-            padding-left: 65px;
+            padding-left: 30px;
             padding-right: 30px;
         }
     }

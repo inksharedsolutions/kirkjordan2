@@ -1,19 +1,19 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Layout from '../components/layout'
 import Inputs from "../components/Inputs/inputs"
 import Nav from '../components/nav'
 import Banner from '../components/non-front-banner'
 import { Helmet } from "react-helmet"
 
-const Contact = (props)=>{
+const Contact = (props) => {
 
 
     const [state, actionState] = useState();
 
-    
-	function OnSubmitForm (e) {
 
-	    e.preventDefault();
+    function OnSubmitForm(e) {
+
+        e.preventDefault();
         const form = e.target;
         const data = new FormData(form);
         const xhr = new XMLHttpRequest();
@@ -24,78 +24,83 @@ const Contact = (props)=>{
             if (xhr.status === 200) {
 
                 form.reset();
-                actionState({state:true});
+                actionState({ state: true });
 
             } else {
-            	console.log('something went wrong')
+                console.log('something went wrong')
             }
         };
 
         xhr.send(data);
-       
-    }
-    
 
-    return(
+    }
+
+
+    return (
         <>
 
             <Layout>
-            <Helmet title="Contact | Kirk Jordan"/>
-		 		<Nav pathExt={props.path}/>
-		 		<Banner 
+                <Helmet title="Contact | Kirk Jordan" />
+                <Nav pathExt={props.path} />
+                <Banner
                     spanFirst={`Get In`}
                     contextHeading={`Touch`}
-                 />
+                />
 
                 <main className="flexMainContainer">
                     <div className="flex-container-fx">
-                        
-                            <p className="contactMessage">
-                                How do you like my books? Leave a comment below, I’d love to hear from you!
-                            </p>
+
+                        <p className="contactMessage">
+                            How do you like my books? Leave a comment below, I’d love to hear from you!
+                        </p>
 
 
-                            {
-                                state && (
-                                    <>
-                                        <section className="success-messages">
-                                            <p>
-                                                Succesfully Sent!
-                                            </p>
-                                        </section>
-                                    </>
-                                )
-                            }
+                        {
+                            state && (
+                                <>
+                                    <section className="success-messages">
+                                        <p>
+                                            Succesfully Sent!
+                                        </p>
+                                    </section>
+                                </>
+                            )
+                        }
 
 
 
 
-                            <form 
-                                onSubmit={OnSubmitForm}
-                                action="https://formspree.io/f/mbjqoneo"
-                                method="POST">
+                        <form
+                            onSubmit={OnSubmitForm}
+                            action="https://formspree.io/f/mbjqoneo"
+                            method="POST">
 
                             <div className="columns" id="form-wrapper">
                                 <div className="column is-half">
-                            
-                                    <Inputs 
-                                        name="fullname" 
+
+                                    <Inputs
+                                        name="fullname"
                                         type="text" />
 
                                     <Inputs
-                                        name="phone" 
+                                        name="phone"
                                         type="text" />
 
                                 </div>
 
                                 <div className="column is-half">
 
-                                    <Inputs 
+                                        <input
+                                        type="hidden"
+                                        name="author"
+                                        value="Kirk Jordan" />
+
+                                    <Inputs
                                         name="email"
                                         type="email" />
 
-                                    <Inputs 
-                                        name="address" 
+                                    <Inputs
+                                        name="address"
                                         type="text" />
 
                                 </div>
@@ -108,11 +113,11 @@ const Contact = (props)=>{
                                         className="textArea"
                                         placeholder='Message'
                                         required />
-            
+
 
                                     <div className="buttonContainer">
-                                        <input 
-                                            className="abtiaryButton" 
+                                        <input
+                                            className="abtiaryButton"
                                             value="Submit"
                                             type="submit" />
                                     </div>
@@ -125,7 +130,7 @@ const Contact = (props)=>{
                         <div className="info-section-address">
                             <span>
                                 <h5>Address</h5>
-                                <p style={{fontSize: '1.2em'}}>831 N Tatnall Street, Suite M #188 Wilmington, DE 19801</p>
+                                <p style={{ fontSize: '1.2em' }}>831 N Tatnall Street, Suite M #188 Wilmington, DE 19801</p>
                             </span>
 
                             <span>
@@ -141,7 +146,7 @@ const Contact = (props)=>{
                     </div>
                 </main>
 
-		 	</Layout>
+            </Layout>
         </>
     )
 }
