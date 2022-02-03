@@ -21,29 +21,33 @@
         }
     }
 
-    button{
+   
 
-        width: 202px;
-        padding: 20px;
-        margin-top: 3em;
-        background-color: #3a3f39;
-        
-        a{
-            color: white !important;
-        }
+    .btn-container{  
+        button{
 
-        &:before{
-            content: '';
-            width: 1px;
-            height: 27px;
-            position: absolute;
-            display: block;
-            transform: translate(52px, -46px);
-            background: red;
-        }
-
-        &:hover{
-            background-color: #9a8c7e;
+            width: 202px;
+            padding: 20px;
+            margin-top: 3em;
+            background-color: #3a3f39;
+            
+            a{
+                color: white !important;
+            }
+    
+            &:before{
+                content: '';
+                width: 1px;
+                height: 27px;
+                position: absolute;
+                display: block;
+                transform: translate(52px, -46px);
+                // background: red;
+            }
+    
+            &:hover{
+                background-color: #9a8c7e;
+            }
         }
     }
 
