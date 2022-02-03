@@ -1,14 +1,20 @@
 /*
 * Responsive Media Queries
 */
+@media screen and (max-height : 550px){
+    .banner-content-wrapper{
+        height: 155vh;
+    }
+}
 
-@media screen and (max-width : 1450px) {
+@media screen and (max-width : 1450px){
+    
     .book-contents {
         h1 {
             font-size: 4rem;
         }
     }
-
+    
     .button-wraps {
         width: 44% !important;
     }
@@ -19,11 +25,12 @@
         }
     }
 
-    body {
-        p {
+    body{
+        p{
             font-size: 1em;
         }
     }
+
 }
 
 @media screen and (max-width : 1366px)
@@ -187,9 +194,9 @@
     }
 
     .wrapper-ds {
-        justify-content: center;
-        align-items: center;
-        padding-top: 120px;
+        // justify-content: center;
+        // align-items: center;
+        // padding-top: 120px;
     }
 
 }

@@ -26,9 +26,6 @@ $prm-font-size : 12px;
         line-height: 0;
         color: #c5c5c5;
 
-        @media (max-width:768px) {
-            margin-top: 150px;
-        }
     }
 
     h1 {
@@ -43,9 +40,11 @@ $prm-font-size : 12px;
 .wrapper-ds {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     align-items: lef;
-    height: 400px;
+    height: 550px;
+    /* margin-top: 100px; */
     position: relative;
     z-index: 2;
 }

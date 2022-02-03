@@ -72,11 +72,16 @@ const Contact = (props) => {
 
                         <form
                             onSubmit={OnSubmitForm}
-                            action="https://formspree.io/f/mbjqoneo"
+                             action="https://formspree.io/f/mbjqoneo"
                             method="POST">
 
                             <div className="columns" id="form-wrapper">
                                 <div className="column is-half">
+
+                                    <input
+                                        type="hidden"
+                                        name="author"
+                                        value="Kirk Jordan" />
 
                                     <Inputs
                                         name="fullname"
@@ -89,11 +94,6 @@ const Contact = (props) => {
                                 </div>
 
                                 <div className="column is-half">
-
-                                        <input
-                                        type="hidden"
-                                        name="author"
-                                        value="Kirk Jordan" />
 
                                     <Inputs
                                         name="email"
@@ -108,12 +108,12 @@ const Contact = (props) => {
 
                             <div className="columns">
                                 <div className="column is-full" id="textAreaContainer">
-                                    <label htmlFor="message">Message</label>
-                                    <textarea type="text" name='message' id="message"
-                                        className="textArea"
-                                        placeholder='Message'
-                                        required />
-
+                                    <label> Message
+                                        <textarea type="text" name='message'
+                                            className="formInputs textArea"
+                                            placeholder='Message'
+                                            required />
+                                    </label>
 
                                     <div className="buttonContainer">
                                         <input
